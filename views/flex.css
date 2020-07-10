@@ -1,0 +1,106 @@
+body {
+    width: 100%;
+}
+
+.one {
+    background-color: #0010f2;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.two {
+    display: inline-block;
+    width: 90%;
+    height: 10%;
+    background-color: #1b4007;
+    margin: 0 auto;
+}
+
+.three {
+    display: inline-block;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    margin: 0 auto;
+    flex-grow: 2;
+}
+
+.four {
+    display:flex;
+    width: 30%;
+    height: 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+.five {
+    width: 20%;
+    height: 30%;
+    margin: 2%;
+    background-color: cyan;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.flex_wrapped {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-content: space-around;
+
+    width: 90%;
+    height: 20%;
+
+    margin: 2%;
+
+    background-color: magenta;
+}
+
+.flex_spaced {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 30%;
+
+    margin: 2%;
+
+    background-color: purple;
+}
+
+.nav_bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: center; 
+    margin: 0 auto;
+}
+
+p {
+    color: white;
+    margin: 20px;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    height: 60%
+}
+
+.box > * {
+    flex: 1 100%;
+}
+
+.top{background-color: blue;}
+.left{background-color: yellow;}
+.mid{background-color: red; flex: 2 0px;}
+.right{background-color: green;}
+.bottom{background-color: orange;}

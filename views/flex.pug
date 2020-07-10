@@ -1,0 +1,50 @@
+html
+    head
+        title= 'Test 1'
+        style
+            include ./flex.css
+    body
+        div.one
+            a(href='https://www.gov.uk')
+                p= 'Lorem'
+            p= 'Ipsum'
+        div.two
+            div.three
+            div.three
+            div.three
+
+        div.two
+            div.four
+            div.four
+            div.four
+
+        div.flex_wrapped
+            div.five
+            div.five
+            div.five
+                p= 'Flex box with columns and wrap, without wrap children shrink, children are a proportion of their parents'
+
+        div.flex_spaced
+            div.five
+            div.five
+            div.five
+            div.five
+            div.five
+            div.five
+            div.three
+            div.four
+
+        div.nav_bar
+            p= 'Home'
+            p= 'Work'
+            p= 'Sleep'
+
+        div.box
+            div.top
+                p= "I see you there Morgan"
+            div.left
+                p= "Writing the words, eating the birds"
+            div.mid
+                p= "There should be something here"
+            div.right
+            div.bottom
