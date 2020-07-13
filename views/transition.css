@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.trigger {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: 100px;
+}
+
+.sidebar .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.trigger:hover {
+    background-color: grey;
+}
+
+.main {
+    transition: margin-left 0.5s;
+}
