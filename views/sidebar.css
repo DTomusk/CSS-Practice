@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: inherit;
+    height: 50px;
+    background-color: black;
+}
+
+.button {
+    height: inherit;
+    width: 50px;
+    background-color: green;
+    position: relative;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+#main {
+    width: 100%;
+    transition: margin-left 0.5s;
+}
