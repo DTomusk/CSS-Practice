@@ -1,0 +1,24 @@
+html
+    head
+        title= "Dropdown test"
+        style
+            include ./drop.css
+    body
+        div.nav
+            span.opt= 'Home'
+                div.dropdown_content
+                    p= "We like to party"
+            span.opt= 'Away'
+                div.dropdown_content
+                    p= "What's new scooby doo?"
+            span.opt= 'Pachinko'
+                div.dropmenu
+                    ul.items
+                        li= 'One'
+                        li= 'Two'
+                        li= 'Three'
+        div.top
+        div.dropdown
+            span= 'Come here'
+            div.dropdown_content
+                p= "Hey, you, what's that sound?"
