@@ -1,0 +1,33 @@
+.content {
+    width: 220px;
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    padding: 4px;
+}
+
+.content:hover {
+    transform: scale(1.03);
+    box-shadow: 7px 13px 5px 0px rgba(0,0,0,0.2);
+}
+
+.img {
+    width: inherit;
+    height: 60%;
+    background-color: green;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+h2 {
+    font-family: arial, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

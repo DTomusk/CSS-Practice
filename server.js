@@ -5,6 +5,7 @@ var app = express();
 
 app.set('view engine', 'pug');
 
+app.use(express.static('views'));
 
 app.get('/flex', function(req, res) {
 	res.render('flex', {})
@@ -26,6 +27,11 @@ app.get('/sidebar', function(req, res) {
 	res.render('sidebar', {})
 })
 
+app.get('/project', function(req, res) {
+	res.render('project', {})
+})
+
 app.listen(3000, function() {
 	console.log("Listening on 3000");
+	console.log(__dirname);
 });
